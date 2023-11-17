@@ -1,0 +1,655 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(/assets/fonts/Poppins.zip);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#check {
+  display: none;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 35px;
+  color: #015788;
+  cursor: pointer;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 70px 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.bg-light {
+  background-color: #f5fcff;
+}
+
+.btn {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #015788;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+  background-color: #015788;
+  color: #fff;
+  border: 1px solid #015788;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.title h2 {
+  font-size: 34px;
+  color: #015788;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.title p {
+  font-size: 21px;
+  color: #111111;
+  font-style: italic;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo h3 {
+  font-size: 35px;
+  color: #015788;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+header ul li {
+  margin: 0 17px;
+}
+header a {
+  position: relative;
+  font-size: 15px;
+  color: #015788;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+header a:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: -3px;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #015788;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-in-out;
+}
+header a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+main .container {
+  width: 100%;
+  padding: 100px 120px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .container h1 {
+  color: #fff;
+  font-size: 49px;
+  padding-bottom: 30px;
+}
+main .container p {
+  color: #e9e9e9;
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 65px;
+}
+
+#courses .courses {
+  display: grid;
+  gap: 40px;
+}
+#courses .courses .card {
+  width: 390px;
+  height: 430px;
+  background-color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+#courses .courses .card img {
+  width: 390px;
+  height: 370px;
+}
+#courses .courses .card .location {
+  padding-left: 40px;
+  padding-top: 12px;
+}
+#courses .courses .card .location i {
+  font-size: 24px;
+  color: #015788;
+}
+#courses .courses .card .location span {
+  font-size: 24px;
+  padding: 30px;
+  font-style: italic;
+  font-weight: 300;
+  color: #015788;
+}
+#courses .courses .card:hover {
+  transform: scale(1.1);
+}
+
+#guidelines .container {
+  height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/staff.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#guidelines .guidelines {
+  display: grid;
+  gap: 15px;
+}
+#guidelines .guidelines .box {
+  border: 5px solid #79c0ea;
+  width: 310px;
+  height: 450px;
+  margin: 30% auto;
+  text-align: center;
+}
+#guidelines .guidelines .box i {
+  padding-top: 150px;
+  font-size: 60px;
+  color: #79c0ea;
+}
+#guidelines .guidelines .box h3 {
+  font-size: 29px;
+  color: #79c0ea;
+  margin-top: 20px;
+  font-weight: bold;
+}
+#guidelines .guidelines .box p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#work .work {
+  display: grid;
+  gap: 2px;
+}
+#work .work .text-box {
+  width: 410px;
+  height: 380px;
+  text-align: center;
+  background-color: #d1f2ff;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+#work .work .text-box h3 {
+  padding-top: 60px;
+  font-weight: 300;
+}
+#work .work .text-box h2 {
+  font-size: 33px;
+  padding-top: 20px;
+}
+#work .work .text-box p {
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 30px;
+}
+#work .work .text-box:hover {
+  transform: scale(1.18);
+}
+#work .work .work-box img {
+  width: 410px;
+  height: 380px;
+}
+
+#tours .tours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tours .tours .activity {
+  padding: 40px 0;
+}
+#tours .tours .activity h2 {
+  font-size: 28px;
+  padding-bottom: 25px;
+}
+#tours .tours .activity ul {
+  list-style-type: none;
+}
+#tours .tours .activity ul li {
+  padding-top: 8px;
+  color: #015788;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+#tours .tours .activity ul li:hover {
+  color: #79c0ea;
+}
+#tours .tours .tours-letter {
+  padding: 40px 0;
+}
+#tours .tours .tours-letter h2 {
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+#tours .tours .tours-letter p {
+  font-style: italic;
+  font-size: 19px;
+  padding-bottom: 20px;
+}
+#tours .tours .tours-letter input {
+  border: 1px solid #c3c5c7;
+  padding: 6px 8px;
+  border-radius: 5px;
+  color: #111111;
+}
+#tours .tours .tours-letter .btn {
+  border: 1px solid #015788;
+  border-radius: 7px;
+  padding: 6px 10px;
+  background-color: #015788;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+#tours .tours .tours-letter .btn:hover {
+  background-color: #fff;
+  color: #015788;
+}
+#tours .tours .tours-letter i {
+  padding-top: 18px;
+  font-size: 24px;
+  color: #015788;
+  padding-left: 15px;
+  transition: all 0.4s ease-in-out;
+}
+#tours .tours .tours-letter i:hover {
+  color: #79c0ea;
+}
+
+#bookings .container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/about.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bookings .bookings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10% 10%;
+}
+#bookings .bookings .text-b {
+  padding-top: 50px;
+  width: 40%;
+}
+#bookings .bookings .text-b h2 {
+  font-size: 45px;
+  color: #fff;
+  padding-bottom: 25px;
+}
+#bookings .bookings .text-b p {
+  font-size: 18px;
+  font-style: italic;
+  color: #fff;
+  padding-bottom: 45px;
+}
+#bookings .bookings .box-form h3 {
+  padding-bottom: 15px;
+  font-size: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+#bookings .bookings .box-form .form {
+  width: 300px;
+  padding: 10px;
+  background: #fdfdfd;
+}
+#bookings .bookings .box-form .form .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+#bookings .bookings .box-form .form .input-box input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #015788;
+  outline: none;
+}
+#bookings .bookings .box-form .form .input-box input:focus ~ span, #bookings .bookings .box-form .form .input-box input:valid ~ span {
+  color: #015788;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+#bookings .bookings .box-form .form .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.4s;
+  color: #015788;
+}
+#bookings .bookings .box-form .form .input-box [type=submit] {
+  width: 100px;
+  background: #015788;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-left: 30%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer .info {
+  width: 270px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+footer .footer .info h3 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+footer .footer .info p {
+  font-style: italic;
+  font-size: 18px;
+  padding-bottom: 15px;
+  color: #015788;
+}
+footer .footer .info span p {
+  font-size: 22px;
+  color: #111111;
+}
+footer .footer .info span address {
+  color: #015788;
+  padding-top: 8px;
+}
+footer .footer .menu {
+  padding-top: 68px;
+  padding-bottom: 30px;
+}
+footer .footer .menu h3 {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+footer .footer .menu ul {
+  list-style-type: none;
+}
+footer .footer .menu ul li {
+  padding: 8px 0;
+  font-size: 18px;
+}
+footer .footer .menu ul li a {
+  color: #015788;
+}
+footer .footer .menu ul li a:hover {
+  color: #79c0ea;
+}
+footer .footer .social-media {
+  padding-top: 68px;
+  padding-bottom: 30px;
+}
+footer .footer .social-media h3 {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+footer .footer .social-media ul {
+  list-style-type: none;
+}
+footer .footer .social-media ul li {
+  padding: 8px 0;
+  font-size: 18px;
+}
+footer .footer .social-media ul li a {
+  color: #015788;
+}
+footer .footer .social-media ul li a:hover {
+  color: #79c0ea;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .icons {
+    display: inline-flex;
+  }
+  .icons #close-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  #check:checked ~ nav {
+    height: 285px;
+  }
+  #check:checked ~ nav a {
+    transform: translateY(0);
+    transition-delay: calc(0.15s * var(--i));
+  }
+  header {
+    height: auto;
+    padding: 20px 0;
+    flex-direction: column;
+  }
+  header .container {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav {
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #f5fcff;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+  header nav a {
+    display: block;
+    font-size: 18px;
+    margin: 18px;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: 0.3s ease;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header .logo h3 {
+    font-size: 33px;
+  }
+  main {
+    padding-bottom: 60px;
+  }
+  main .container {
+    width: 90%;
+    height: 100%;
+    text-align: left;
+  }
+  main .container h1 {
+    width: 250px;
+    height: 100px;
+    font-size: 32px;
+    padding-bottom: 50px;
+    margin-left: -60px;
+  }
+  main .container p {
+    font-size: 20px;
+    width: 190px;
+    height: 130px;
+    padding-bottom: 75px;
+    margin-left: -60px;
+  }
+  main .container a.btn {
+    padding: 10px 12px;
+    width: 90%;
+    margin-left: -60px;
+  }
+  #courses .courses {
+    grid-template-columns: 1fr;
+  }
+  #courses .courses .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #courses .courses .card img {
+    width: 100%;
+  }
+  #courses .courses .card .location {
+    padding-top: 15px;
+  }
+  #courses .courses .card .location i {
+    font-size: 20px;
+  }
+  #courses .courses .card .location span {
+    font-size: 20px;
+  }
+  #guidelines .guidelines {
+    grid-template-columns: 1fr;
+  }
+  #guidelines .container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #work {
+    height: auto;
+  }
+  #work .work {
+    grid-template-columns: 1fr;
+  }
+  #work .work .text-box {
+    width: 100%;
+  }
+  #work .work .work-box {
+    width: 100%;
+  }
+  #work .work .work-box img {
+    width: 100%;
+  }
+  #tours .tours {
+    flex-direction: column;
+  }
+  #tours .tours .activity {
+    width: 90%;
+  }
+  #tours .tours .activity h2 {
+    width: 200px;
+    line-height: 30px;
+  }
+  #tours .tours .tours-letter {
+    width: 90%;
+  }
+  #bookings .container {
+    width: 90%;
+    height: auto;
+  }
+  #bookings .container .bookings {
+    flex-direction: column;
+    width: 100%;
+    height: 0 auto;
+  }
+  #bookings .container .bookings .text-b {
+    padding-bottom: 100px;
+  }
+  #bookings .container .bookings .text-b h2 {
+    font-size: 32px;
+  }
+  #bookings .container .bookings .text-b p {
+    font-size: 15px;
+  }
+  footer .footer {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 800px) {
+  .container {
+    width: 1250px;
+  }
+  header {
+    flex-direction: row;
+    height: 100px;
+  }
+  header .container {
+    flex-direction: row;
+  }
+  header ul {
+    flex-direction: row;
+  }
+  #courses .courses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #guidelines .guidelines {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #work .work {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #tours .tours {
+    flex-direction: row;
+  }
+  #bookings .bookings {
+    flex-direction: row;
+  }
+  footer .footer {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
