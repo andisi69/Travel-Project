@@ -413,6 +413,7 @@ footer .footer .info p {
   font-size: 18px;
   padding-bottom: 15px;
   color: #015788;
+  text-align: left;
 }
 footer .footer .info span p {
   font-size: 22px;
@@ -463,6 +464,18 @@ footer .footer .social-media ul li a {
 }
 footer .footer .social-media ul li a:hover {
   color: #79c0ea;
+}
+footer hr {
+  background: #015788;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin: 25px 0;
+}
+footer p {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #015788;
 }
 
 @media screen and (max-width: 768px) {
@@ -624,6 +637,10 @@ footer .footer .social-media ul li a:hover {
   }
   footer .footer {
     flex-direction: column;
+  }
+  footer hr {
+    width: 90%;
+    margin: 20px auto;
   }
 }
 @media screen and (min-width: 800px) {

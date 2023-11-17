@@ -496,6 +496,7 @@ footer {
                 font-size: 18px;
                 padding-bottom: 15px;
                 color: $blue;
+                text-align: left;
             }
 
             span {
@@ -564,6 +565,20 @@ footer {
                 }
             }
         }
+    }
+
+    hr {
+        background: $blue;
+        height: 1px;
+        width: 100%;
+        border: 0;
+        margin: 25px 0;
+    }
+
+    p {
+        padding-bottom: 20px;
+        text-align: center;
+        color: $blue;
     }
 }
 
@@ -787,7 +802,10 @@ footer {
     footer {
         .footer {
             flex-direction: column;
-
+        }
+        hr {
+            width: 90%;
+            margin: 20px auto;
         }
     }
 }
