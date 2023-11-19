@@ -160,6 +160,9 @@ main .container p {
   font-size: 24px;
   color: #015788;
 }
+#courses .courses .card .location i:hover {
+  color: #79c0ea;
+}
 #courses .courses .card .location span {
   font-size: 24px;
   padding: 30px;
